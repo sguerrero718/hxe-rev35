@@ -1,0 +1,17 @@
+ID: wave35
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: api
+   type: nodejs
+   path: api
+   provides:
+    - name: api_api
+      properties:
+         url: ${default-url}
+
+ - name: ui
+   type: html5
+   path: ui
+
